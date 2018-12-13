@@ -9,17 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var numberLAbel: UILabel!
+ 
+    @IBOutlet weak var numberTextfield: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
     }
+    
+    
+    @IBAction func onNumberButtonTapped(_ sender: Any) {
+        
+        let numberToDipslay = numberTextfield.text
+        numberLAbel.text = numberToDipslay
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
